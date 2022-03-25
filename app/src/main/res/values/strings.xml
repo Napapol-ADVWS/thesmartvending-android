@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Advance Vending</string>
+    <string name="app_version">2.1.2-001</string>
+    <string name="create_hint">According to the docking document, please use ttyS4 for testing first</string>
+    <string name="create_serialport">①Create serial port object</string>
+    <string name="select_init_serialport_path">Select initial serial port path：</string>
+    <string name="machine">Devices：</string>
+    <string name="aisle_row">Aisle-row：</string>
+    <string name="aisle_column">Aisle-column：</string>
+    <string name="aisle_type">Aisle type：</string>
+    <string name="open_repetition_deliver">Open repeat execute</string>
+    <string name="query_machine">②Query machine</string>
+    <string name="deliver_operation">③Deliver operation</string>
+    <string name="clear_seq">Clear seq</string>
+    <string name="clear_task">Clear task</string>
+    <string name="into_wrapper_class">Enter singleton class</string>
+    <string name="batch_test">Batch test</string>
+    <string name="max_test_rows">Maximum test line：</string>
+    <string name="max_test_column">Maximum test column：</string>
+    <string name="start_test">start testing</string>
+    <string name="open_repetition_test">Enable repeat test</string>
+    <string name="go_back">return</string>
+    <string name="light_brightness">Light bar brightness</string>
+    <string name="submit">submit</string>
+    <string name="setting_lift_machine_storey">Set the lift height</string>
+    <string name="query_all">Query all storey heights</string>
+    <string name="reset_storey">Reset storey height</string>
+    <string name="number_of_plies">Number of layers</string>
+    <string name="storey_height">Storey height</string>
+    <string name="setting_single_storey">Set single layer height</string>
+    <string name="operation_fail">operation failed</string>
+    <string name="machine_main">Main</string>
+    <string name="affiliate_machine_A">A</string>
+    <string name="affiliate_machine_C">C</string>
+    <string name="unknown">unknown</string>
+    <string name="not_found_machine">No machine found</string>
+    <string name="deliver_success">Successfully deliver</string>
+    <string name="explain_code">Explain code</string>
+    <string name="deliver_fail">Deliver failed</string>
+    <string name="aisle">Aisle</string>
+    <string name="not_found_serial_path">Serial port path does not exist</string>
+    <string name="statistics">statistics</string>
+    <string name="operation_success">Operation success</string>
+    <string name="create_serial_port_operation_obj_please">Please create a serial port operation object first</string>
+    <string name="input_value_cannot_be_greater_than">The input value cannot be greater than%d</string>
+    <string name="please_enter_values_from_some_to_some" formatted="false">Please enter a value between %d and %d</string>
+    <string name="number_of_layers_cannot_be_empty">The number of layers cannot be empty</string>
+
+
+    <string-array name="serialport_path">
+        <item>ttyS0</item>
+        <item>ttyS1</item>
+        <item>ttyS2</item>
+        <item>ttyS3</item>
+        <item>ttyS4</item>
+    </string-array>
+
+    <string-array name="serialport_path_value">
+        <item>/dev/ttyS0</item>
+        <item>/dev/ttyS1</item>
+        <item>/dev/ttyS2</item>
+        <item>/dev/ttyS3</item>
+        <item>/dev/ttyS4</item>
+    </string-array>
+
+
+    <string-array name="aisle_type">
+        <item>Aisle spring</item>
+        <item>Aisle grid</item>
+        <item>Aisle lift spring</item>
+        <item>Aisle lift track</item>
+        <item>Aisle track</item>
+        <item>Aisle lift no pressure track</item>
+
+    </string-array>
+
+    <string-array name="vending_model">
+        <item>PRO</item>
+        <item>ULTRA</item>
+        <item>ULTRA PLUS</item>
+        <item>CUSTOM</item>
+    </string-array>
+
+    <integer-array name="vending_model_val">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="row_type">
+        <item>Spring</item>
+        <item>Spring+Lift</item>
+        <item>Track+Lift</item>
+        <item>Track</item>
+        <item>Track+Lift(No Switch)</item>
+        <item>Zero+Spring+Lift</item>
+        <item>Zero+Track+Lift</item>
+    </string-array>
+
+    <integer-array name="row_type_val">
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>14</item>
+        <item>15</item>
+    </integer-array>
+
+    <integer-array name="aisle_val">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+
+
+    <string name="video_notfound">ไม่พบไฟล์วิดีโอ</string>
+    <string name="BoardErrorMsg">Vending board Loading</string>
+    <string name="ConnectServerMsg">Connecting to server</string>
+
+</resources>
+

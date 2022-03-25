@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/settingBg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/line1st"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/labelKioskID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KioskID : "
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inputKioskID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/labelKioskID"
+                android:hint="KioskID"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2nd"
+        android:layout_below="@+id/line1st"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/labelRegister"
+                android:text="Register Key : "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/inputRegisterKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/labelRegister"
+                android:hint="Register Key"
+                android:inputType="text" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3rd"
+        android:layout_below="@+id/line2nd"
+        android:layout_width="900dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/labelMessage"
+                android:text="Ads Message : "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/inputTextAds"
+                android:hint="Message to show on screen"
+                android:inputType="text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/labelMessage"
+                android:layout_toEndOf="@+id/labelMessage" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/areaBtnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/line4th"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/line1st"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btnSaveSetting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4th"
+        android:layout_below="@+id/line3rd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/btnLayoutMargin">
+
+            <TextView
+                android:id="@+id/labelVendingModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vending Model : "
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/selectVendingModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/vending_model"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setCashLine"
+        android:layout_below="@+id/line4th"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lineRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/btnLayoutMargin">
+
+            <TextView
+                android:id="@+id/btn11"
+                style="@style/buttonSlotTest"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/btn12"
+                style="@style/buttonSlotTest"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/btn13"
+                style="@style/buttonSlotTest"
+                android:text="13" />
+
+            <TextView
+                android:id="@+id/btn14"
+                style="@style/buttonSlotTest"
+                android:text="14" />
+
+            <TextView
+                android:id="@+id/btn15"
+                style="@style/buttonSlotTest"
+                android:text="15" />
+
+            <TextView
+                android:id="@+id/btn16"
+                style="@style/buttonSlotTest"
+                android:text="16" />
+
+            <TextView
+                android:id="@+id/btn17"
+                style="@style/buttonSlotTest"
+                android:text="17" />
+
+            <TextView
+                android:id="@+id/btn18"
+                style="@style/buttonSlotTest"
+                android:text="18" />
+
+            <TextView
+                android:id="@+id/btn19"
+                style="@style/buttonSlotTest"
+                android:text="19" />
+
+            <TextView
+                android:id="@+id/btn1A"
+                style="@style/buttonSlotTest"
+                android:text="1A" />
+
+            <Spinner
+                android:id="@+id/row1Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn21"
+                style="@style/buttonSlotTest"
+                android:text="21" />
+
+            <TextView
+                android:id="@+id/btn22"
+                style="@style/buttonSlotTest"
+                android:text="22" />
+
+            <TextView
+                android:id="@+id/btn23"
+                style="@style/buttonSlotTest"
+                android:text="23" />
+
+            <TextView
+                android:id="@+id/btn24"
+                style="@style/buttonSlotTest"
+                android:text="24" />
+
+            <TextView
+                android:id="@+id/btn25"
+                style="@style/buttonSlotTest"
+                android:text="25" />
+
+            <TextView
+                android:id="@+id/btn26"
+                style="@style/buttonSlotTest"
+                android:text="26" />
+
+            <TextView
+                android:id="@+id/btn27"
+                style="@style/buttonSlotTest"
+                android:text="27" />
+
+            <TextView
+                android:id="@+id/btn28"
+                style="@style/buttonSlotTest"
+                android:text="28" />
+
+            <TextView
+                android:id="@+id/btn29"
+                style="@style/buttonSlotTest"
+                android:text="29" />
+
+            <TextView
+                android:id="@+id/btn2A"
+                style="@style/buttonSlotTest"
+                android:text="2A" />
+
+            <Spinner
+                android:id="@+id/row2Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn31"
+                style="@style/buttonSlotTest"
+                android:text="31" />
+
+            <TextView
+                android:id="@+id/btn32"
+                style="@style/buttonSlotTest"
+                android:text="32" />
+
+            <TextView
+                android:id="@+id/btn33"
+                style="@style/buttonSlotTest"
+                android:text="33" />
+
+            <TextView
+                android:id="@+id/btn34"
+                style="@style/buttonSlotTest"
+                android:text="34" />
+
+            <TextView
+                android:id="@+id/btn35"
+                style="@style/buttonSlotTest"
+                android:text="35" />
+
+            <TextView
+                android:id="@+id/btn36"
+                style="@style/buttonSlotTest"
+                android:text="36" />
+
+            <TextView
+                android:id="@+id/btn37"
+                style="@style/buttonSlotTest"
+                android:text="37" />
+
+            <TextView
+                android:id="@+id/btn38"
+                style="@style/buttonSlotTest"
+                android:text="38" />
+
+            <TextView
+                android:id="@+id/btn39"
+                style="@style/buttonSlotTest"
+                android:text="39" />
+
+            <TextView
+                android:id="@+id/btn3A"
+                style="@style/buttonSlotTest"
+                android:text="3A" />
+
+            <Spinner
+                android:id="@+id/row3Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn41"
+                style="@style/buttonSlotTest"
+                android:text="41" />
+
+            <TextView
+                android:id="@+id/btn42"
+                style="@style/buttonSlotTest"
+                android:text="42" />
+
+            <TextView
+                android:id="@+id/btn43"
+                style="@style/buttonSlotTest"
+                android:text="43" />
+
+            <TextView
+                android:id="@+id/btn44"
+                style="@style/buttonSlotTest"
+                android:text="44" />
+
+            <TextView
+                android:id="@+id/btn45"
+                style="@style/buttonSlotTest"
+                android:text="45" />
+
+            <TextView
+                android:id="@+id/btn46"
+                style="@style/buttonSlotTest"
+                android:text="46" />
+
+            <TextView
+                android:id="@+id/btn47"
+                style="@style/buttonSlotTest"
+                android:text="47" />
+
+            <TextView
+                android:id="@+id/btn48"
+                style="@style/buttonSlotTest"
+                android:text="48" />
+
+            <TextView
+                android:id="@+id/btn49"
+                style="@style/buttonSlotTest"
+                android:text="49" />
+
+            <TextView
+                android:id="@+id/btn4A"
+                style="@style/buttonSlotTest"
+                android:text="4A" />
+
+            <Spinner
+                android:id="@+id/row4Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn51"
+                style="@style/buttonSlotTest"
+                android:text="51" />
+
+            <TextView
+                android:id="@+id/btn52"
+                style="@style/buttonSlotTest"
+                android:text="52" />
+
+            <TextView
+                android:id="@+id/btn53"
+                style="@style/buttonSlotTest"
+                android:text="53" />
+
+            <TextView
+                android:id="@+id/btn54"
+                style="@style/buttonSlotTest"
+                android:text="54" />
+
+            <TextView
+                android:id="@+id/btn55"
+                style="@style/buttonSlotTest"
+                android:text="55" />
+
+            <TextView
+                android:id="@+id/btn56"
+                style="@style/buttonSlotTest"
+                android:text="56" />
+
+            <TextView
+                android:id="@+id/btn57"
+                style="@style/buttonSlotTest"
+                android:text="57" />
+
+            <TextView
+                android:id="@+id/btn58"
+                style="@style/buttonSlotTest"
+                android:text="58" />
+
+            <TextView
+                android:id="@+id/btn59"
+                style="@style/buttonSlotTest"
+                android:text="59" />
+
+            <TextView
+                android:id="@+id/btn5A"
+                style="@style/buttonSlotTest"
+                android:text="5A" />
+
+            <Spinner
+                android:id="@+id/row5Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn61"
+                style="@style/buttonSlotTest"
+                android:text="61" />
+
+            <TextView
+                android:id="@+id/btn62"
+                style="@style/buttonSlotTest"
+                android:text="62" />
+
+            <TextView
+                android:id="@+id/btn63"
+                style="@style/buttonSlotTest"
+                android:text="63" />
+
+            <TextView
+                android:id="@+id/btn64"
+                style="@style/buttonSlotTest"
+                android:text="64" />
+
+            <TextView
+                android:id="@+id/btn65"
+                style="@style/buttonSlotTest"
+                android:text="65" />
+
+            <TextView
+                android:id="@+id/btn66"
+                style="@style/buttonSlotTest"
+                android:text="66" />
+
+            <TextView
+                android:id="@+id/btn67"
+                style="@style/buttonSlotTest"
+                android:text="67" />
+
+            <TextView
+                android:id="@+id/btn68"
+                style="@style/buttonSlotTest"
+                android:text="68" />
+
+            <TextView
+                android:id="@+id/btn69"
+                style="@style/buttonSlotTest"
+                android:text="69" />
+
+            <TextView
+                android:id="@+id/btn6A"
+                style="@style/buttonSlotTest"
+                android:text="6A" />
+
+            <Spinner
+                android:id="@+id/row6Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btnLayoutMargin"
+            android:layout_marginTop="@dimen/btnLayoutMargin"
+            android:layout_marginEnd="@dimen/btnLayoutMargin"
+            android:layout_marginBottom="@dimen/btnLayoutMargin"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn71"
+                style="@style/buttonSlotTest"
+                android:text="71" />
+
+            <TextView
+                android:id="@+id/btn72"
+                style="@style/buttonSlotTest"
+                android:text="72" />
+
+            <TextView
+                android:id="@+id/btn73"
+                style="@style/buttonSlotTest"
+                android:text="73" />
+
+            <TextView
+                android:id="@+id/btn74"
+                style="@style/buttonSlotTest"
+                android:text="74" />
+
+            <TextView
+                android:id="@+id/btn75"
+                style="@style/buttonSlotTest"
+                android:text="75" />
+
+            <TextView
+                android:id="@+id/btn76"
+                style="@style/buttonSlotTest"
+                android:text="76" />
+
+            <TextView
+                android:id="@+id/btn77"
+                style="@style/buttonSlotTest"
+                android:text="77" />
+
+            <TextView
+                android:id="@+id/btn78"
+                style="@style/buttonSlotTest"
+                android:text="78" />
+
+            <TextView
+                android:id="@+id/btn79"
+                style="@style/buttonSlotTest"
+                android:text="79" />
+
+            <TextView
+                android:id="@+id/btn7A"
+                style="@style/buttonSlotTest"
+                android:text="7A" />
+
+            <Spinner
+                android:id="@+id/row7Aisle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/row_type" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setCashLine"
+        android:layout_above="@+id/setCashLine2"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="จำนวนเงิน"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/editMoneyReceived"
+                android:textAlignment="center"
+                android:hint="money"
+                android:imeOptions="actionDone"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:text="บาท"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnOpenCoin"
+            android:text="Received"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCloseCoin"
+            android:text="Stop received"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="จำนวนเงินที่ได้รับ"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/userMoneyShow"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="บาท"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setCashLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setHLine"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="เหรียญ 1 บาท :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text1b"
+                android:text="0"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="เหรียญ 2 บาท :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/text2b"
+            android:text="0"
+            android:textSize="24sp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="เหรียญ 5 บาท :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text5b"
+                android:text="0"
+                android:textSize="24sp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="เหรียญ 10 บาท :"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text10b"
+                android:text="0"
+                android:textSize="24sp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setHLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lineBottom"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="ความสูงชั้น :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edt_storey0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edt_storey9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnQueryHeight"
+            android:text="Query"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnSetHeight"
+            android:text="ตั้งค่า"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineBottom"
+        android:weightSum="10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_weight="6"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTimeOut"
+            android:layout_weight="2"
+            tools:text="timeout"
+            android:textColor="@color/buttonTestFail"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnSetting"
+            android:text="ตั้งค่าเครื่อง"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLeave"
+            android:text="ออก"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

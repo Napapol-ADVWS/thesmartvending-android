@@ -1,0 +1,4 @@
+include ':GBSerialPort'
+include ':GBSerialPort'
+include ':app'
+rootProject.name = "AdvanceVending"

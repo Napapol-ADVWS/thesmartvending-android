@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:layout_weight="2"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/pLogo"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:src="@drawable/logo_advws" />
+
+        <LinearLayout
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/onlineStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Online"
+                android:textColor="@color/blue_advws"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/machineID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="ID: XXXXX"
+                android:textColor="@color/blue_advws"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/appVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Version: X.X.X"
+                android:textColor="@color/blue_advws"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="3"
+        android:weightSum="7"
+        android:background="@color/blue_advws"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/week_day"
+                    android:text="week day"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/dmy"
+                    android:text="03-03-2021"
+                    android:textSize="14sp"
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        <View
+            android:id="@+id/barDivider"
+            android:layout_height="match_parent"
+            android:layout_width="1dp"
+            android:background="#FFFFFF"
+            style="@style/Divider"/>
+
+        <TextView
+            android:id="@+id/time_day"
+            android:text="11:11"
+            android:layout_gravity="center"
+            android:textSize="36sp"
+            android:padding="10dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/signal_level"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/signal_level_3" />
+
+            <TextView
+                android:id="@+id/pingRes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:text="RT: 2000ms"
+                android:textAlignment="textEnd"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

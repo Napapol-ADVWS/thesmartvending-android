@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btnTestSize">80dp</dimen>
+    <dimen name="btnLayoutMargin">5dp</dimen>
+    <dimen name="touchButtonSize">120dp</dimen>
+    <dimen name="videoHeight">608dp</dimen>
+    <dimen name="bannerLineHeight">100dp</dimen>
+
+    <!--    Dialog dimension-->
+    <dimen name="dialogPadding">20dp</dimen>
+    <dimen name="paymentDiaglogWidth">800dp</dimen>
+    <dimen name="paymentDiaglogHeight">800dp</dimen>
+    <dimen name="halfPaymentDialogHeight">380dp</dimen>
+    <dimen name="halfPaymentDialogWidth">380dp</dimen>
+    <dimen name="qrButtonSize">150dp</dimen>
+
+    <!--    Custom product item-->
+    <dimen name="productItemHeight">200dp</dimen>
+</resources>

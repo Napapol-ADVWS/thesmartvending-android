@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="bg_transparent">@android:color/transparent</color>
+
+    <color name="buttonTest">#03A9F4</color>
+    <color name="buttonTestPass">#82DA79</color>
+    <color name="buttonTestWarning">#FFEB3B</color>
+    <color name="buttonTestWorking">#E8946D</color>
+    <color name="buttonTestFail">#FF0404</color>
+    <color name="appColor">#8BBEF6</color>
+    <color name="red_hitop">#D40200</color>
+    <color name="blue_advws">#003194</color>
+</resources>

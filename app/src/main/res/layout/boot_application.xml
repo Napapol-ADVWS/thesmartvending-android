@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/bootLoad"
+        android:layout_centerInParent="true"
+        android:text="Application Loading"
+        android:textSize="36sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/qrUID"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <TextView
+            android:id="@+id/textUID"
+            android:textSize="24sp"
+            android:maxLines="1"
+            tools:text = "UUID"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/activateCode"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:hint="Enter activation code"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/activateConfirm"
+            android:textSize="24sp"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="Enter"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/qrUID"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"/>-->
+    <!--    -->
+    <!--    <EditText-->
+    <!--        android:id="@+id/activateCode"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:layout_below="@+id/qrUID"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:hint="Enter activation code"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:layout_width="300dp"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>
